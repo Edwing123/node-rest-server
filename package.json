@@ -4,7 +4,7 @@
   "description": "rest-server",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon server/server"
+    "start": "node server/server.js"
   },
   "keywords": [
     "rest-server"
