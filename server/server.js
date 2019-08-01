@@ -10,6 +10,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 // routes
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome home</h1>')
+});
 app.get('/user', (req, res) => {
   // res.send('Hi there!!');
   // res.json({
