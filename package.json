@@ -4,7 +4,7 @@
   "description": "rest-server",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "npx nodemon server/server.js"
   },
   "keywords": [
     "rest-server"
@@ -12,7 +12,14 @@
   "author": "Edwing123",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.6.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
