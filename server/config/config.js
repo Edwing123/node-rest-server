@@ -11,7 +11,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
   urlDB = 'mongodb://localhost/super-coffee';
 } else {
-  urlDB = 'mongodb+srv://Edwing123:5AEJIv2bLc3tlUQU@cluster0-pobs9.mongodb.net/test'
+  urlDB = process.env.MONGO_URL;
 };
 
 // enviroment connection url
